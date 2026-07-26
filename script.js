@@ -6,8 +6,7 @@ document.querySelector(".done-btn").addEventListener("click", function () {
 
     if (proceed) {
 
-        const message = `🙏 Thank you for visiting *A1 ONLINE (CSC Centre)!*
-
+        const message = `🙏 Thank you for visiting *A1 ONLINE (CSC Centre)!
 We truly appreciate your support.
 
 ⭐ We'd love your feedback.
