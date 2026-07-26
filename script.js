@@ -22,3 +22,10 @@ https://g.page/r/CQAAALAarYk4EAE/review`;
         "https://wa.me/?text=" + encodeURIComponent(message);
 
 };
+function copyUPI(){
+
+navigator.clipboard.writeText("paytmqr5jribv@ptys");
+
+alert("✅ UPI ID copied successfully!");
+
+}
