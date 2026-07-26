@@ -1,23 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.querySelector(".done-btn").addEventListener("click", function () {
 
-    const doneButton = document.querySelector(".done-btn");
+    const proceed = confirm(
+        "🎉 Thank you for your payment!\n\nClick OK to leave us a Google Review via WhatsApp."
+    );
 
-    doneButton.addEventListener("click", function () {
+    if (proceed) {
 
-        const message =
-`Thank you for visiting *A1 ONLINE (CSC Centre)!* 🙏
+        const message = `🙏 Thank you for visiting *A1 ONLINE (CSC Centre)!*
 
 We truly appreciate your support.
 
-Please rate us on Google ⭐⭐⭐⭐⭐
+⭐ We'd love your feedback.
 
-https://g.page/r/CQAAALAarYk4EAE/review`;
+Please rate us on Google:
+https://g.page/r/CQAAALAarYk4EAE/review
 
-        const whatsappURL =
-"https://wa.me/?text=" + encodeURIComponent(message);
+Thank you 😊`;
 
-        window.open(whatsappURL, "_blank");
-
-    });
+        window.location.href =
+            "https://wa.me/?text=" + encodeURIComponent(message);
+    }
 
 });
