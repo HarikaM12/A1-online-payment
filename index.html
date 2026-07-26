@@ -1,9 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>A1 ONLINE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A1 ONLINE (CSC Centre)</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Welcome to A1 ONLINE</h1>
+
+<div class="container">
+
+    <h1>🏪 A1 ONLINE</h1>
+
+    <p>CSC Centre</p>
+
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=upi://pay?pa=paytmqr5jribv@ptys"
+         class="qr">
+
+    <br><br>
+
+    <a class="pay-btn"
+       href="upi://pay?pa=paytmqr5jribv@ptys">
+       💳 Pay Now
+    </a>
+
+    <br><br>
+
+    <button class="done-btn">
+        ✅ I've Paid
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
